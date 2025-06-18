@@ -1,5 +1,4 @@
 ## Share Recast Automation Template
-_@recastsoftware/publicapprovers_
 ### Purpose
 Briefly describe what this automation does and what problem it solves.
 
