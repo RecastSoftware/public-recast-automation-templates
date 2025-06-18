@@ -1,15 +1,15 @@
-## Pull Request Template
-  
+## Share Recast Automation Template
+_@recastsoftware/publicapprovers_
 ### Purpose
-Briefly describe what this action does and what problem it solves.
+Briefly describe what this automation does and what problem it solves.
 
 ### Target Scope _(select one)_
 - [ ] User-targeted action
 - [ ] Device-targeted action
-- [ ] Generic
+- [ ] Generic action
 
 ### Environment Considerations
- Are any modifications or configuration changes needed to use this action?
+Are any modifications or configuration changes needed to use this action?
 
 ### Checklist
 - [ ] All company-specific data has been sanitized or replaced with generic placeholders.
