@@ -1,0 +1,3 @@
+This builder action flushes the DNS cache on one or more machines by executing the "Clear-DnsClientCache" cmdlet within a PowerShell script block. 
+
+Microsoft Documentation for Clear-DnsClientCache: https://learn.microsoft.com/en-us/powershell/module/dnsclient/clear-dnsclientcache?view=windowsserver2025-ps
