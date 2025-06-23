@@ -1,1 +1,1 @@
-This builder action lets you rerun app deployments on one or more devices. When you run it, you’ll be asked to enter the deployment ID.
+This builder action allows you to rerun app deployments on one or more devices. When you run it, you’ll be asked to enter the deployment ID.
