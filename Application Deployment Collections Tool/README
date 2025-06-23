@@ -1,0 +1,1 @@
+This action is ran against devices. It adds them to a collection selected from a list of collections, waits 10 seconds, and then runs a machine policy retrieval and evaluation cycle. It's meant to be used to deploy applications through adding devices to collections. 
