@@ -1,1 +1,979 @@
-<BuilderAction xmlns="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><BuilderVersion xmlns:a="http://schemas.datacontract.org/2004/07/System"><a:_Build>2506</a:_Build><a:_Major>5</a:_Major><a:_Minor>10</a:_Minor><a:_Revision>1702</a:_Revision></BuilderVersion><Category>Device</Category><Dangerous>false</Dangerous><DangerousString>Are you sure?</DangerousString><DisplayType>Two Grid Results</DisplayType><Graph xmlns:a="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions.BuilderGraph"><a:Nodes xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:Key>d6d54faf-bb35-4b53-94f3-13100b769087</b:Key><b:Value><a:Neighbors><b:KeyValueOfstringEdgeAue4CSkn><b:Key>9a793fbd-5b92-4725-802b-2a7aed1a7139</b:Key><b:Value><a:Condition i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action>AddDevicestoCollection</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin>ConfigMgrServer</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:OutputParameterMappingValueProvider"><a:Name i:nil="true"/><a:OutputParameterName>SmsProvider</a:OutputParameterName><a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>AddDevicestoCollection</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin>ConfigMgrServer</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:OutputParameterMappingValueProvider"><a:Name i:nil="true"/><a:OutputParameterName>SiteCode</a:OutputParameterName><a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>AddDevicestoCollection</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Computers</a:Name><a:Plugin>ConfigMgrServer</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Collections.Generic.IEnumerable`1[System.String]</c:Data></a:SanitizedType><a:ValueProvider i:type="a:OutputParameterMappingValueProvider"><a:Name>Parameter Mapping</a:Name><a:OutputParameterName>ComputerName</a:OutputParameterName><a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>AddDevicestoCollection</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>CollectionID</a:Name><a:Plugin>ConfigMgrServer</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:OutputParameterMappingValueProvider"><a:Name>Parameter Mapping</a:Name><a:OutputParameterName>Collection Names</a:OutputParameterName><a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:ParameterMappings i:nil="true"/><a:TriggerOnUserInterface>false</a:TriggerOnUserInterface></b:Value></b:KeyValueOfstringEdgeAue4CSkn></a:Neighbors><a:Value><a:Action>StartNode</a:Action><a:DisplayName i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders><b:anyType i:type="a:CustomStringListParameterValueProvider"><a:Name i:nil="true"/><a:DisplayName>List</a:DisplayName><a:Value>DEV00116</a:Value><a:Values><a:CustomStringListParameterItem><a:DisplayName>Adobe Reader</a:DisplayName><a:Value>DEV00116</a:Value></a:CustomStringListParameterItem><a:CustomStringListParameterItem><a:DisplayName>Chrome</a:DisplayName><a:Value>DEV00115</a:Value></a:CustomStringListParameterItem></a:Values></b:anyType><b:anyType i:type="a:CustomStringParameterValueProvider"><a:Name i:nil="true"/><a:Advanced>false</a:Advanced><a:DefaultValue i:nil="true"/><a:DisplayName>Textbox</a:DisplayName><a:MaxLength>0</a:MaxLength><a:MaxLengthWarning>0</a:MaxLengthWarning><a:MinLength>0</a:MinLength><a:MinLengthWarning>0</a:MinLengthWarning><a:ValidationRegex i:nil="true"/><a:ValidationRegexWarning i:nil="true"/><a:Value i:nil="true"/></b:anyType></a:AllowedValueProviders><a:Custom>true</a:Custom><a:Mask>false</a:Mask><a:Name>Collection Names</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:CustomStringListParameterValueProvider"><a:Name i:nil="true"/><a:DisplayName>List</a:DisplayName><a:Value>DEV00116</a:Value><a:Values><a:CustomStringListParameterItem><a:DisplayName>Adobe Reader</a:DisplayName><a:Value>DEV00116</a:Value></a:CustomStringListParameterItem><a:CustomStringListParameterItem><a:DisplayName>Chrome</a:DisplayName><a:Value>DEV00115</a:Value></a:CustomStringListParameterItem></a:Values></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:OutputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders><b:anyType i:type="a:CustomStringListParameterValueProvider"><a:Name i:nil="true"/><a:DisplayName>List</a:DisplayName><a:Value>DEV00116</a:Value><a:Values><a:CustomStringListParameterItem><a:DisplayName>Adobe Reader</a:DisplayName><a:Value>DEV00116</a:Value></a:CustomStringListParameterItem><a:CustomStringListParameterItem><a:DisplayName>Chrome</a:DisplayName><a:Value>DEV00115</a:Value></a:CustomStringListParameterItem></a:Values></b:anyType><b:anyType i:type="a:CustomStringParameterValueProvider"><a:Name i:nil="true"/><a:Advanced>false</a:Advanced><a:DefaultValue i:nil="true"/><a:DisplayName>Textbox</a:DisplayName><a:MaxLength>0</a:MaxLength><a:MaxLengthWarning>0</a:MaxLengthWarning><a:MinLength>0</a:MinLength><a:MinLengthWarning>0</a:MinLengthWarning><a:ValidationRegex i:nil="true"/><a:ValidationRegexWarning i:nil="true"/><a:Value i:nil="true"/></b:anyType></a:AllowedValueProviders><a:Custom>true</a:Custom><a:Mask>false</a:Mask><a:Name>Collection Names</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:CustomStringListParameterValueProvider"><a:Name i:nil="true"/><a:DisplayName>List</a:DisplayName><a:Value>DEV00116</a:Value><a:Values><a:CustomStringListParameterItem><a:DisplayName>Adobe Reader</a:DisplayName><a:Value>DEV00116</a:Value></a:CustomStringListParameterItem><a:CustomStringListParameterItem><a:DisplayName>Chrome</a:DisplayName><a:Value>DEV00115</a:Value></a:CustomStringListParameterItem></a:Values></a:ValueProvider></a:InputParameterBuilder></a:OutputParameters><a:Plugin>BuilderAction</a:Plugin><a:ShowResults>false</a:ShowResults><a:UniqueID>d6d54faf-bb35-4b53-94f3-13100b769087</a:UniqueID></a:Value></b:Value></b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:Key>9a793fbd-5b92-4725-802b-2a7aed1a7139</b:Key><b:Value><a:Neighbors><b:KeyValueOfstringEdgeAue4CSkn><b:Key>d81ee7a3-3e88-4534-9caf-cd9eff033bda</b:Key><b:Value><a:Condition i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action>Sleep</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Seconds</a:Name><a:Plugin>BuilderAction</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Int32</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:int" xmlns:c="http://www.w3.org/2001/XMLSchema">10</a:Value></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:ParameterMappings i:nil="true"/><a:TriggerOnUserInterface>false</a:TriggerOnUserInterface></b:Value></b:KeyValueOfstringEdgeAue4CSkn></a:Neighbors><a:Value><a:Action>AddDevicestoCollection</a:Action><a:DisplayName i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action>AddDevicestoCollection</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin>ConfigMgrServer</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>AddDevicestoCollection</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin>ConfigMgrServer</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>AddDevicestoCollection</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Computers</a:Name><a:Plugin>ConfigMgrServer</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Collections.Generic.IEnumerable`1[System.String]</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>AddDevicestoCollection</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>CollectionID</a:Name><a:Plugin>ConfigMgrServer</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:OutputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>Recast.RightClickTools.Plugins.ConfigMgrServer.Abstractions.AddResourceToCollectionResults, Recast.RightClickTools.Plugins.ConfigMgrServer.Abstractions, Version=5.10.2506.1705, Culture=neutral, PublicKeyToken=null</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.Name</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.CollectionID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Nullable`1[System.UInt32]</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.Message</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.Count</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Int32</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IsSuccessful</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:OutputParameters><a:Plugin>ConfigMgrServer</a:Plugin><a:ShowResults>true</a:ShowResults><a:UniqueID>9a793fbd-5b92-4725-802b-2a7aed1a7139</a:UniqueID></a:Value></b:Value></b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:Key>d81ee7a3-3e88-4534-9caf-cd9eff033bda</b:Key><b:Value><a:Neighbors><b:KeyValueOfstringEdgeAue4CSkn><b:Key>4a58c680-789a-42c2-bd8e-9aa04717183c</b:Key><b:Value><a:Condition i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action>MachinePolicyRetrievalandEvaluationCycle</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin>ConfigMgrClient</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:OutputParameterMappingValueProvider"><a:Name i:nil="true"/><a:OutputParameterName>ComputerName</a:OutputParameterName><a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:ParameterMappings i:nil="true"/><a:TriggerOnUserInterface>false</a:TriggerOnUserInterface></b:Value></b:KeyValueOfstringEdgeAue4CSkn></a:Neighbors><a:Value><a:Action>Sleep</a:Action><a:DisplayName i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action>Sleep</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Seconds</a:Name><a:Plugin>BuilderAction</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Int32</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:int" xmlns:c="http://www.w3.org/2001/XMLSchema">0</a:Value></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:OutputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IsSuccessful</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:OutputParameters><a:Plugin>BuilderAction</a:Plugin><a:ShowResults>true</a:ShowResults><a:UniqueID>d81ee7a3-3e88-4534-9caf-cd9eff033bda</a:UniqueID></a:Value></b:Value></b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:Key>4a58c680-789a-42c2-bd8e-9aa04717183c</b:Key><b:Value><a:Neighbors/><a:Value><a:Action>MachinePolicyRetrievalandEvaluationCycle</a:Action><a:DisplayName i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action>MachinePolicyRetrievalandEvaluationCycle</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin>ConfigMgrClient</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:OutputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IsSuccessful</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:OutputParameters><a:Plugin>ConfigMgrClient</a:Plugin><a:ShowResults>true</a:ShowResults><a:UniqueID>4a58c680-789a-42c2-bd8e-9aa04717183c</a:UniqueID></a:Value></b:Value></b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn></a:Nodes><a:Start><a:Action>StartNode</a:Action><a:DisplayName i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><b:anyType i:type="a:CustomStringListParameterValueProvider"><a:Name i:nil="true"/><a:DisplayName>List</a:DisplayName><a:Value>DEV00116</a:Value><a:Values><a:CustomStringListParameterItem><a:DisplayName>Adobe Reader</a:DisplayName><a:Value>DEV00116</a:Value></a:CustomStringListParameterItem><a:CustomStringListParameterItem><a:DisplayName>Chrome</a:DisplayName><a:Value>DEV00115</a:Value></a:CustomStringListParameterItem></a:Values></b:anyType><b:anyType i:type="a:CustomStringParameterValueProvider"><a:Name i:nil="true"/><a:Advanced>false</a:Advanced><a:DefaultValue i:nil="true"/><a:DisplayName>Textbox</a:DisplayName><a:MaxLength>0</a:MaxLength><a:MaxLengthWarning>0</a:MaxLengthWarning><a:MinLength>0</a:MinLength><a:MinLengthWarning>0</a:MinLengthWarning><a:ValidationRegex i:nil="true"/><a:ValidationRegexWarning i:nil="true"/><a:Value i:nil="true"/></b:anyType></a:AllowedValueProviders><a:Custom>true</a:Custom><a:Mask>false</a:Mask><a:Name>Collection Names</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:CustomStringListParameterValueProvider"><a:Name i:nil="true"/><a:DisplayName>List</a:DisplayName><a:Value>DEV00116</a:Value><a:Values><a:CustomStringListParameterItem><a:DisplayName>Adobe Reader</a:DisplayName><a:Value>DEV00116</a:Value></a:CustomStringListParameterItem><a:CustomStringListParameterItem><a:DisplayName>Chrome</a:DisplayName><a:Value>DEV00115</a:Value></a:CustomStringListParameterItem></a:Values></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:OutputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><b:anyType i:type="a:CustomStringListParameterValueProvider"><a:Name i:nil="true"/><a:DisplayName>List</a:DisplayName><a:Value>DEV00116</a:Value><a:Values><a:CustomStringListParameterItem><a:DisplayName>Adobe Reader</a:DisplayName><a:Value>DEV00116</a:Value></a:CustomStringListParameterItem><a:CustomStringListParameterItem><a:DisplayName>Chrome</a:DisplayName><a:Value>DEV00115</a:Value></a:CustomStringListParameterItem></a:Values></b:anyType><b:anyType i:type="a:CustomStringParameterValueProvider"><a:Name i:nil="true"/><a:Advanced>false</a:Advanced><a:DefaultValue i:nil="true"/><a:DisplayName>Textbox</a:DisplayName><a:MaxLength>0</a:MaxLength><a:MaxLengthWarning>0</a:MaxLengthWarning><a:MinLength>0</a:MinLength><a:MinLengthWarning>0</a:MinLengthWarning><a:ValidationRegex i:nil="true"/><a:ValidationRegexWarning i:nil="true"/><a:Value i:nil="true"/></b:anyType></a:AllowedValueProviders><a:Custom>true</a:Custom><a:Mask>false</a:Mask><a:Name>Collection Names</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:CustomStringListParameterValueProvider"><a:Name i:nil="true"/><a:DisplayName>List</a:DisplayName><a:Value>DEV00116</a:Value><a:Values><a:CustomStringListParameterItem><a:DisplayName>Adobe Reader</a:DisplayName><a:Value>DEV00116</a:Value></a:CustomStringListParameterItem><a:CustomStringListParameterItem><a:DisplayName>Chrome</a:DisplayName><a:Value>DEV00115</a:Value></a:CustomStringListParameterItem></a:Values></a:ValueProvider></a:InputParameterBuilder></a:OutputParameters><a:Plugin>BuilderAction</a:Plugin><a:ShowResults>false</a:ShowResults><a:UniqueID>d6d54faf-bb35-4b53-94f3-13100b769087</a:UniqueID></a:Start></Graph><InputParameters i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><Name>App Deploy Collections Tool</Name><ResultInputParameterName>ComputerName</ResultInputParameterName><Type>DeviceWithResourceId</Type><UniqueID>68e5242d-0088-4a73-a2f9-c38a38e3e83d</UniqueID></BuilderAction>
+<BuilderAction
+    xmlns="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <BuilderVersion xmlns:a="http://schemas.datacontract.org/2004/07/System">
+        <a:_Build>2506</a:_Build>
+        <a:_Major>5</a:_Major>
+        <a:_Minor>10</a:_Minor>
+        <a:_Revision>1702</a:_Revision>
+    </BuilderVersion>
+    <Category>Device</Category>
+    <Dangerous>false</Dangerous>
+    <DangerousString>Are you sure?</DangerousString>
+    <DisplayType>Two Grid Results</DisplayType>
+    <Graph
+        xmlns:a="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions.BuilderGraph">
+        <a:Nodes xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>d6d54faf-bb35-4b53-94f3-13100b769087</b:Key>
+                <b:Value>
+                    <a:Neighbors>
+                        <b:KeyValueOfstringEdgeAue4CSkn>
+                            <b:Key>9a793fbd-5b92-4725-802b-2a7aed1a7139</b:Key>
+                            <b:Value>
+                                <a:Condition i:nil="true" />
+                                <a:InputParameters>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>AddDevicestoCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>SmsProvider</a:Name>
+                                        <a:Plugin>ConfigMgrServer</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:OutputParameterName>SmsProvider</a:OutputParameterName>
+                                            <a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>AddDevicestoCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>SiteCode</a:Name>
+                                        <a:Plugin>ConfigMgrServer</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:OutputParameterName>SiteCode</a:OutputParameterName>
+                                            <a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>AddDevicestoCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Computers</a:Name>
+                                        <a:Plugin>ConfigMgrServer</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>
+                                                System.Collections.Generic.IEnumerable`1[System.String]</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name>Parameter Mapping</a:Name>
+                                            <a:OutputParameterName>ComputerName</a:OutputParameterName>
+                                            <a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>AddDevicestoCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>CollectionID</a:Name>
+                                        <a:Plugin>ConfigMgrServer</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name>Parameter Mapping</a:Name>
+                                            <a:OutputParameterName>Collection Names</a:OutputParameterName>
+                                            <a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                </a:InputParameters>
+                                <a:ParameterMappings i:nil="true" />
+                                <a:TriggerOnUserInterface>false</a:TriggerOnUserInterface>
+                            </b:Value>
+                        </b:KeyValueOfstringEdgeAue4CSkn>
+                    </a:Neighbors>
+                    <a:Value>
+                        <a:Action>StartNode</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SiteCode</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SmsProvider</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ResourceID</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders>
+                                    <b:anyType i:type="a:CustomStringListParameterValueProvider">
+                                        <a:Name i:nil="true" />
+                                        <a:DisplayName>List</a:DisplayName>
+                                        <a:Value>DEV00116</a:Value>
+                                        <a:Values>
+                                            <a:CustomStringListParameterItem>
+                                                <a:DisplayName>Adobe Reader</a:DisplayName>
+                                                <a:Value>DEV00116</a:Value>
+                                            </a:CustomStringListParameterItem>
+                                            <a:CustomStringListParameterItem>
+                                                <a:DisplayName>Chrome</a:DisplayName>
+                                                <a:Value>DEV00115</a:Value>
+                                            </a:CustomStringListParameterItem>
+                                        </a:Values>
+                                    </b:anyType>
+                                    <b:anyType i:type="a:CustomStringParameterValueProvider">
+                                        <a:Name i:nil="true" />
+                                        <a:Advanced>false</a:Advanced>
+                                        <a:DefaultValue i:nil="true" />
+                                        <a:DisplayName>Textbox</a:DisplayName>
+                                        <a:MaxLength>0</a:MaxLength>
+                                        <a:MaxLengthWarning>0</a:MaxLengthWarning>
+                                        <a:MinLength>0</a:MinLength>
+                                        <a:MinLengthWarning>0</a:MinLengthWarning>
+                                        <a:ValidationRegex i:nil="true" />
+                                        <a:ValidationRegexWarning i:nil="true" />
+                                        <a:Value i:nil="true" />
+                                    </b:anyType>
+                                </a:AllowedValueProviders>
+                                <a:Custom>true</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Collection Names</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:CustomStringListParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:DisplayName>List</a:DisplayName>
+                                    <a:Value>DEV00116</a:Value>
+                                    <a:Values>
+                                        <a:CustomStringListParameterItem>
+                                            <a:DisplayName>Adobe Reader</a:DisplayName>
+                                            <a:Value>DEV00116</a:Value>
+                                        </a:CustomStringListParameterItem>
+                                        <a:CustomStringListParameterItem>
+                                            <a:DisplayName>Chrome</a:DisplayName>
+                                            <a:Value>DEV00115</a:Value>
+                                        </a:CustomStringListParameterItem>
+                                    </a:Values>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SiteCode</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SmsProvider</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ResourceID</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders>
+                                    <b:anyType i:type="a:CustomStringListParameterValueProvider">
+                                        <a:Name i:nil="true" />
+                                        <a:DisplayName>List</a:DisplayName>
+                                        <a:Value>DEV00116</a:Value>
+                                        <a:Values>
+                                            <a:CustomStringListParameterItem>
+                                                <a:DisplayName>Adobe Reader</a:DisplayName>
+                                                <a:Value>DEV00116</a:Value>
+                                            </a:CustomStringListParameterItem>
+                                            <a:CustomStringListParameterItem>
+                                                <a:DisplayName>Chrome</a:DisplayName>
+                                                <a:Value>DEV00115</a:Value>
+                                            </a:CustomStringListParameterItem>
+                                        </a:Values>
+                                    </b:anyType>
+                                    <b:anyType i:type="a:CustomStringParameterValueProvider">
+                                        <a:Name i:nil="true" />
+                                        <a:Advanced>false</a:Advanced>
+                                        <a:DefaultValue i:nil="true" />
+                                        <a:DisplayName>Textbox</a:DisplayName>
+                                        <a:MaxLength>0</a:MaxLength>
+                                        <a:MaxLengthWarning>0</a:MaxLengthWarning>
+                                        <a:MinLength>0</a:MinLength>
+                                        <a:MinLengthWarning>0</a:MinLengthWarning>
+                                        <a:ValidationRegex i:nil="true" />
+                                        <a:ValidationRegexWarning i:nil="true" />
+                                        <a:Value i:nil="true" />
+                                    </b:anyType>
+                                </a:AllowedValueProviders>
+                                <a:Custom>true</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Collection Names</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:CustomStringListParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:DisplayName>List</a:DisplayName>
+                                    <a:Value>DEV00116</a:Value>
+                                    <a:Values>
+                                        <a:CustomStringListParameterItem>
+                                            <a:DisplayName>Adobe Reader</a:DisplayName>
+                                            <a:Value>DEV00116</a:Value>
+                                        </a:CustomStringListParameterItem>
+                                        <a:CustomStringListParameterItem>
+                                            <a:DisplayName>Chrome</a:DisplayName>
+                                            <a:Value>DEV00115</a:Value>
+                                        </a:CustomStringListParameterItem>
+                                    </a:Values>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>BuilderAction</a:Plugin>
+                        <a:ShowResults>false</a:ShowResults>
+                        <a:UniqueID>d6d54faf-bb35-4b53-94f3-13100b769087</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>9a793fbd-5b92-4725-802b-2a7aed1a7139</b:Key>
+                <b:Value>
+                    <a:Neighbors>
+                        <b:KeyValueOfstringEdgeAue4CSkn>
+                            <b:Key>d81ee7a3-3e88-4534-9caf-cd9eff033bda</b:Key>
+                            <b:Value>
+                                <a:Condition i:nil="true" />
+                                <a:InputParameters>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>Sleep</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Seconds</a:Name>
+                                        <a:Plugin>BuilderAction</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Int32</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value i:type="c:int"
+                                                xmlns:c="http://www.w3.org/2001/XMLSchema">10</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                </a:InputParameters>
+                                <a:ParameterMappings i:nil="true" />
+                                <a:TriggerOnUserInterface>false</a:TriggerOnUserInterface>
+                            </b:Value>
+                        </b:KeyValueOfstringEdgeAue4CSkn>
+                    </a:Neighbors>
+                    <a:Value>
+                        <a:Action>AddDevicestoCollection</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action>AddDevicestoCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SmsProvider</a:Name>
+                                <a:Plugin>ConfigMgrServer</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>AddDevicestoCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SiteCode</a:Name>
+                                <a:Plugin>ConfigMgrServer</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>AddDevicestoCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Computers</a:Name>
+                                <a:Plugin>ConfigMgrServer</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Collections.Generic.IEnumerable`1[System.String]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>AddDevicestoCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>CollectionID</a:Name>
+                                <a:Plugin>ConfigMgrServer</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>Recast.RightClickTools.Plugins.ConfigMgrServer.Abstractions.AddResourceToCollectionResults,
+                                        Recast.RightClickTools.Plugins.ConfigMgrServer.Abstractions,
+                                        Version=5.10.2506.1705, Culture=neutral, PublicKeyToken=null</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.Name</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>
+                                    IEnumerable&lt;AddResourceToCollectionResults&gt;.CollectionID</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.ResourceID</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Nullable`1[System.UInt32]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.Message</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IEnumerable&lt;AddResourceToCollectionResults&gt;.Count</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Int32</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IsSuccessful</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>ConfigMgrServer</a:Plugin>
+                        <a:ShowResults>true</a:ShowResults>
+                        <a:UniqueID>9a793fbd-5b92-4725-802b-2a7aed1a7139</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>d81ee7a3-3e88-4534-9caf-cd9eff033bda</b:Key>
+                <b:Value>
+                    <a:Neighbors>
+                        <b:KeyValueOfstringEdgeAue4CSkn>
+                            <b:Key>4a58c680-789a-42c2-bd8e-9aa04717183c</b:Key>
+                            <b:Value>
+                                <a:Condition i:nil="true" />
+                                <a:InputParameters>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>MachinePolicyRetrievalandEvaluationCycle</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>ComputerName</a:Name>
+                                        <a:Plugin>ConfigMgrClient</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:OutputParameterName>ComputerName</a:OutputParameterName>
+                                            <a:SourceNode>d6d54faf-bb35-4b53-94f3-13100b769087</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                </a:InputParameters>
+                                <a:ParameterMappings i:nil="true" />
+                                <a:TriggerOnUserInterface>false</a:TriggerOnUserInterface>
+                            </b:Value>
+                        </b:KeyValueOfstringEdgeAue4CSkn>
+                    </a:Neighbors>
+                    <a:Value>
+                        <a:Action>Sleep</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action>Sleep</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Seconds</a:Name>
+                                <a:Plugin>BuilderAction</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Int32</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:type="c:int"
+                                        xmlns:c="http://www.w3.org/2001/XMLSchema">0</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IsSuccessful</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>BuilderAction</a:Plugin>
+                        <a:ShowResults>true</a:ShowResults>
+                        <a:UniqueID>d81ee7a3-3e88-4534-9caf-cd9eff033bda</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>4a58c680-789a-42c2-bd8e-9aa04717183c</b:Key>
+                <b:Value>
+                    <a:Neighbors />
+                    <a:Value>
+                        <a:Action>MachinePolicyRetrievalandEvaluationCycle</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action>MachinePolicyRetrievalandEvaluationCycle</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin>ConfigMgrClient</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IsSuccessful</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>ConfigMgrClient</a:Plugin>
+                        <a:ShowResults>true</a:ShowResults>
+                        <a:UniqueID>4a58c680-789a-42c2-bd8e-9aa04717183c</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+        </a:Nodes>
+        <a:Start>
+            <a:Action>StartNode</a:Action>
+            <a:DisplayName i:nil="true" />
+            <a:InputParameters>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SiteCode</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SmsProvider</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ResourceID</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ComputerName</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                        <b:anyType i:type="a:CustomStringListParameterValueProvider">
+                            <a:Name i:nil="true" />
+                            <a:DisplayName>List</a:DisplayName>
+                            <a:Value>DEV00116</a:Value>
+                            <a:Values>
+                                <a:CustomStringListParameterItem>
+                                    <a:DisplayName>Adobe Reader</a:DisplayName>
+                                    <a:Value>DEV00116</a:Value>
+                                </a:CustomStringListParameterItem>
+                                <a:CustomStringListParameterItem>
+                                    <a:DisplayName>Chrome</a:DisplayName>
+                                    <a:Value>DEV00115</a:Value>
+                                </a:CustomStringListParameterItem>
+                            </a:Values>
+                        </b:anyType>
+                        <b:anyType i:type="a:CustomStringParameterValueProvider">
+                            <a:Name i:nil="true" />
+                            <a:Advanced>false</a:Advanced>
+                            <a:DefaultValue i:nil="true" />
+                            <a:DisplayName>Textbox</a:DisplayName>
+                            <a:MaxLength>0</a:MaxLength>
+                            <a:MaxLengthWarning>0</a:MaxLengthWarning>
+                            <a:MinLength>0</a:MinLength>
+                            <a:MinLengthWarning>0</a:MinLengthWarning>
+                            <a:ValidationRegex i:nil="true" />
+                            <a:ValidationRegexWarning i:nil="true" />
+                            <a:Value i:nil="true" />
+                        </b:anyType>
+                    </a:AllowedValueProviders>
+                    <a:Custom>true</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>Collection Names</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:CustomStringListParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:DisplayName>List</a:DisplayName>
+                        <a:Value>DEV00116</a:Value>
+                        <a:Values>
+                            <a:CustomStringListParameterItem>
+                                <a:DisplayName>Adobe Reader</a:DisplayName>
+                                <a:Value>DEV00116</a:Value>
+                            </a:CustomStringListParameterItem>
+                            <a:CustomStringListParameterItem>
+                                <a:DisplayName>Chrome</a:DisplayName>
+                                <a:Value>DEV00115</a:Value>
+                            </a:CustomStringListParameterItem>
+                        </a:Values>
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+            </a:InputParameters>
+            <a:OutputParameters>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SiteCode</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SmsProvider</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ResourceID</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ComputerName</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                        <b:anyType i:type="a:CustomStringListParameterValueProvider">
+                            <a:Name i:nil="true" />
+                            <a:DisplayName>List</a:DisplayName>
+                            <a:Value>DEV00116</a:Value>
+                            <a:Values>
+                                <a:CustomStringListParameterItem>
+                                    <a:DisplayName>Adobe Reader</a:DisplayName>
+                                    <a:Value>DEV00116</a:Value>
+                                </a:CustomStringListParameterItem>
+                                <a:CustomStringListParameterItem>
+                                    <a:DisplayName>Chrome</a:DisplayName>
+                                    <a:Value>DEV00115</a:Value>
+                                </a:CustomStringListParameterItem>
+                            </a:Values>
+                        </b:anyType>
+                        <b:anyType i:type="a:CustomStringParameterValueProvider">
+                            <a:Name i:nil="true" />
+                            <a:Advanced>false</a:Advanced>
+                            <a:DefaultValue i:nil="true" />
+                            <a:DisplayName>Textbox</a:DisplayName>
+                            <a:MaxLength>0</a:MaxLength>
+                            <a:MaxLengthWarning>0</a:MaxLengthWarning>
+                            <a:MinLength>0</a:MinLength>
+                            <a:MinLengthWarning>0</a:MinLengthWarning>
+                            <a:ValidationRegex i:nil="true" />
+                            <a:ValidationRegexWarning i:nil="true" />
+                            <a:Value i:nil="true" />
+                        </b:anyType>
+                    </a:AllowedValueProviders>
+                    <a:Custom>true</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>Collection Names</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:CustomStringListParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:DisplayName>List</a:DisplayName>
+                        <a:Value>DEV00116</a:Value>
+                        <a:Values>
+                            <a:CustomStringListParameterItem>
+                                <a:DisplayName>Adobe Reader</a:DisplayName>
+                                <a:Value>DEV00116</a:Value>
+                            </a:CustomStringListParameterItem>
+                            <a:CustomStringListParameterItem>
+                                <a:DisplayName>Chrome</a:DisplayName>
+                                <a:Value>DEV00115</a:Value>
+                            </a:CustomStringListParameterItem>
+                        </a:Values>
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+            </a:OutputParameters>
+            <a:Plugin>BuilderAction</a:Plugin>
+            <a:ShowResults>false</a:ShowResults>
+            <a:UniqueID>d6d54faf-bb35-4b53-94f3-13100b769087</a:UniqueID>
+        </a:Start>
+    </Graph>
+    <InputParameters i:nil="true"
+        xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <Name>App Deploy Collections Tool</Name>
+    <ResultInputParameterName>ComputerName</ResultInputParameterName>
+    <Type>DeviceWithResourceId</Type>
+    <UniqueID>68e5242d-0088-4a73-a2f9-c38a38e3e83d</UniqueID>
+</BuilderAction>

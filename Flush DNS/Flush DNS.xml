@@ -1,1 +1,737 @@
-<BuilderAction xmlns="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><BuilderVersion xmlns:a="http://schemas.datacontract.org/2004/07/System"><a:_Build>2506</a:_Build><a:_Major>5</a:_Major><a:_Minor>11</a:_Minor><a:_Revision>0</a:_Revision></BuilderVersion><Category>Device</Category><Dangerous>false</Dangerous><DangerousString>Are you sure?</DangerousString><DisplayType>Two Grid Results</DisplayType><Graph xmlns:a="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions.BuilderGraph"><a:Nodes xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:Key>068c556b-d2e3-4397-93de-a32d4996117a</b:Key><b:Value><a:Neighbors><b:KeyValueOfstringEdgeAue4CSkn><b:Key>cb7c898a-6c96-4f8b-becb-1cdefbd5cdd4</b:Key><b:Value><a:Condition i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Script</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:string" xmlns:c="http://www.w3.org/2001/XMLSchema">Clear-DnsClientCache</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>InputParameters</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]</c:Data></a:SanitizedType><a:ValueProvider i:type="a:BuilderInputParameterListValueProvider"><a:Name i:nil="true"/><a:Values/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:OutputParameterMappingValueProvider"><a:Name i:nil="true"/><a:OutputParameterName>ComputerName</a:OutputParameterName><a:SourceNode>068c556b-d2e3-4397-93de-a32d4996117a</a:SourceNode></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Debug Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Error Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Information Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Verbose Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Warning Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Progress Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:ParameterMappings i:nil="true"/><a:TriggerOnUserInterface>false</a:TriggerOnUserInterface></b:Value></b:KeyValueOfstringEdgeAue4CSkn></a:Neighbors><a:Value><a:Action>StartNode</a:Action><a:DisplayName i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:OutputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:OutputParameters><a:Plugin>BuilderAction</a:Plugin><a:ShowResults>false</a:ShowResults><a:UniqueID>068c556b-d2e3-4397-93de-a32d4996117a</a:UniqueID></a:Value></b:Value></b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn><b:Key>cb7c898a-6c96-4f8b-becb-1cdefbd5cdd4</b:Key><b:Value><a:Neighbors/><a:Value><a:Action>RunPowerShellScriptBlock</a:Action><a:DisplayName i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Script</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>InputParameters</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.String</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:string" xmlns:c="http://www.w3.org/2001/XMLSchema"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Debug Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Error Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Information Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Verbose Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Warning Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action>RunPowerShellScriptBlock</a:Action><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>Show Progress Stream</a:Name><a:Plugin>PowerShell</a:Plugin><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:type="c:boolean" xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:OutputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;Dictionary&gt;</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Collections.Generic.Dictionary`2[System.String,System.Object]</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;Dictionary&gt;.IDictionary&lt;String,Object&gt;</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Collections.Generic.Dictionary`2[System.String,System.Object]</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;Dictionary&gt;.IDictionary&lt;String,Object&gt;.Object</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Object</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IEnumerable&lt;Dictionary&gt;.Count</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Int32</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>IsSuccessful</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><c:Data>System.Boolean</c:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:OutputParameters><a:Plugin>PowerShell</a:Plugin><a:ShowResults>true</a:ShowResults><a:UniqueID>cb7c898a-6c96-4f8b-becb-1cdefbd5cdd4</a:UniqueID></a:Value></b:Value></b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn></a:Nodes><a:Start><a:Action>StartNode</a:Action><a:DisplayName i:nil="true"/><a:InputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:InputParameters><a:OutputParameters><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SiteCode</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>SmsProvider</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ResourceID</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder><a:InputParameterBuilder><a:Action i:nil="true"/><a:AllowedValueProviders i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:Custom>false</a:Custom><a:Mask>false</a:Mask><a:Name>ComputerName</a:Name><a:Plugin i:nil="true"/><a:SanitizedType xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions"><b:Data>System.String</b:Data></a:SanitizedType><a:ValueProvider i:type="a:ConstantParameterValueProvider"><a:Name i:nil="true"/><a:Value i:nil="true"/></a:ValueProvider></a:InputParameterBuilder></a:OutputParameters><a:Plugin>BuilderAction</a:Plugin><a:ShowResults>false</a:ShowResults><a:UniqueID>068c556b-d2e3-4397-93de-a32d4996117a</a:UniqueID></a:Start></Graph><InputParameters i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><Name>Flush DNS</Name><ResultInputParameterName>ComputerName</ResultInputParameterName><Type>DeviceWithResourceId</Type><UniqueID>5b9a74a7-e2ca-415d-a5ff-2c39262d9c08</UniqueID></BuilderAction>
+<BuilderAction
+    xmlns="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <BuilderVersion xmlns:a="http://schemas.datacontract.org/2004/07/System">
+        <a:_Build>2506</a:_Build>
+        <a:_Major>5</a:_Major>
+        <a:_Minor>11</a:_Minor>
+        <a:_Revision>0</a:_Revision>
+    </BuilderVersion>
+    <Category>Device</Category>
+    <Dangerous>false</Dangerous>
+    <DangerousString>Are you sure?</DangerousString>
+    <DisplayType>Two Grid Results</DisplayType>
+    <Graph
+        xmlns:a="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions.BuilderGraph">
+        <a:Nodes xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>068c556b-d2e3-4397-93de-a32d4996117a</b:Key>
+                <b:Value>
+                    <a:Neighbors>
+                        <b:KeyValueOfstringEdgeAue4CSkn>
+                            <b:Key>cb7c898a-6c96-4f8b-becb-1cdefbd5cdd4</b:Key>
+                            <b:Value>
+                                <a:Condition i:nil="true" />
+                                <a:InputParameters>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Script</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value i:type="c:string"
+                                                xmlns:c="http://www.w3.org/2001/XMLSchema">
+                                                Clear-DnsClientCache</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>InputParameters</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>
+                                                System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:BuilderInputParameterListValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Values />
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>ComputerName</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:OutputParameterName>ComputerName</a:OutputParameterName>
+                                            <a:SourceNode>068c556b-d2e3-4397-93de-a32d4996117a</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Show Debug Stream</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value i:type="c:boolean"
+                                                xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Show Error Stream</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value i:type="c:boolean"
+                                                xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Show Information Stream</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value i:type="c:boolean"
+                                                xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Show Verbose Stream</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value i:type="c:boolean"
+                                                xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Show Warning Stream</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value i:type="c:boolean"
+                                                xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Show Progress Stream</a:Name>
+                                        <a:Plugin>PowerShell</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value i:type="c:boolean"
+                                                xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                </a:InputParameters>
+                                <a:ParameterMappings i:nil="true" />
+                                <a:TriggerOnUserInterface>false</a:TriggerOnUserInterface>
+                            </b:Value>
+                        </b:KeyValueOfstringEdgeAue4CSkn>
+                    </a:Neighbors>
+                    <a:Value>
+                        <a:Action>StartNode</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SiteCode</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SmsProvider</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ResourceID</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SiteCode</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SmsProvider</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ResourceID</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>BuilderAction</a:Plugin>
+                        <a:ShowResults>false</a:ShowResults>
+                        <a:UniqueID>068c556b-d2e3-4397-93de-a32d4996117a</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>cb7c898a-6c96-4f8b-becb-1cdefbd5cdd4</b:Key>
+                <b:Value>
+                    <a:Neighbors />
+                    <a:Value>
+                        <a:Action>RunPowerShellScriptBlock</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Script</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>InputParameters</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>
+                                        System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:type="c:string"
+                                        xmlns:c="http://www.w3.org/2001/XMLSchema" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Show Debug Stream</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:type="c:boolean"
+                                        xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Show Error Stream</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:type="c:boolean"
+                                        xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Show Information Stream</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:type="c:boolean"
+                                        xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Show Verbose Stream</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:type="c:boolean"
+                                        xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Show Warning Stream</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:type="c:boolean"
+                                        xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>RunPowerShellScriptBlock</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Show Progress Stream</a:Name>
+                                <a:Plugin>PowerShell</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:type="c:boolean"
+                                        xmlns:c="http://www.w3.org/2001/XMLSchema">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IEnumerable&lt;Dictionary&gt;</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>
+                                        System.Collections.Generic.Dictionary`2[System.String,System.Object]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>
+                                    IEnumerable&lt;Dictionary&gt;.IDictionary&lt;String,Object&gt;</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>
+                                        System.Collections.Generic.Dictionary`2[System.String,System.Object]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>
+                                    IEnumerable&lt;Dictionary&gt;.IDictionary&lt;String,Object&gt;.Object</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Object</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IEnumerable&lt;Dictionary&gt;.Count</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Int32</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IsSuccessful</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>PowerShell</a:Plugin>
+                        <a:ShowResults>true</a:ShowResults>
+                        <a:UniqueID>cb7c898a-6c96-4f8b-becb-1cdefbd5cdd4</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+        </a:Nodes>
+        <a:Start>
+            <a:Action>StartNode</a:Action>
+            <a:DisplayName i:nil="true" />
+            <a:InputParameters>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SiteCode</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SmsProvider</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ResourceID</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ComputerName</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+            </a:InputParameters>
+            <a:OutputParameters>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SiteCode</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SmsProvider</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ResourceID</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders i:nil="true"
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ComputerName</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+            </a:OutputParameters>
+            <a:Plugin>BuilderAction</a:Plugin>
+            <a:ShowResults>false</a:ShowResults>
+            <a:UniqueID>068c556b-d2e3-4397-93de-a32d4996117a</a:UniqueID>
+        </a:Start>
+    </Graph>
+    <InputParameters i:nil="true"
+        xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <Name>Flush DNS</Name>
+    <ResultInputParameterName>ComputerName</ResultInputParameterName>
+    <Type>DeviceWithResourceId</Type>
+    <UniqueID>5b9a74a7-e2ca-415d-a5ff-2c39262d9c08</UniqueID>
+</BuilderAction>
