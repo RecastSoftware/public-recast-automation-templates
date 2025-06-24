@@ -1,0 +1,9 @@
+This Builder action allows you to force a restart on systems that have a pending reboot scheduled, without requiring you to query for pending reboot data in advance. It's a friendly way to help your end users who hate to restart stay updated and compliant without requiring any personal intervention.
+
+This tool completes the following steps:
+
+Ping Computer
+If Ping is successful, Check System Information Collection for Pending Restart Information
+If Pending Restart Exists, force a Reboot with a 5-minute timer and a user pop-up message: "Your computer needs to restart, please save and close in the next 5 minutes."
+
+Video Walkthrough: https://www.youtube.com/watch?v=AufydAvZcFY

@@ -1,0 +1,1378 @@
+<BuilderAction
+    xmlns="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <BuilderVersion xmlns:a="http://schemas.datacontract.org/2004/07/System">
+        <a:_Build>2302</a:_Build>
+        <a:_Major>5</a:_Major>
+        <a:_Minor>0</a:_Minor>
+        <a:_Revision>1703</a:_Revision>
+    </BuilderVersion>
+    <Category>Device</Category>
+    <Dangerous>false</Dangerous>
+    <DangerousString>Are you sure?</DangerousString>
+    <DisplayType>Tabbed Results</DisplayType>
+    <Graph
+        xmlns:a="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.BuilderAction.Abstractions.BuilderGraph">
+        <a:Nodes xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>bbc2db70-9a5b-4455-91b4-98c369f8a90e</b:Key>
+                <b:Value>
+                    <a:Neighbors>
+                        <b:KeyValueOfstringEdgeAue4CSkn>
+                            <b:Key>494a263f-08fa-4eff-8820-d8f77a6448ac</b:Key>
+                            <b:Value>
+                                <a:Condition i:nil="true" />
+                                <a:InputParameters>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>PingComputer</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>ComputerName</a:Name>
+                                        <a:Plugin>Network</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name>Parameter Mapping</a:Name>
+                                            <a:OutputParameterName>ComputerName</a:OutputParameterName>
+                                            <a:SourceNode>bbc2db70-9a5b-4455-91b4-98c369f8a90e</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                </a:InputParameters>
+                                <a:ParameterMappings i:nil="true" />
+                                <a:TriggerOnUserInterface>false</a:TriggerOnUserInterface>
+                            </b:Value>
+                        </b:KeyValueOfstringEdgeAue4CSkn>
+                    </a:Neighbors>
+                    <a:Value>
+                        <a:Action>StartNode</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SiteCode</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SmsProvider</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SiteCode</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SmsProvider</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>BuilderAction</a:Plugin>
+                        <a:ShowResults>false</a:ShowResults>
+                        <a:UniqueID>bbc2db70-9a5b-4455-91b4-98c369f8a90e</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>8fa58070-8475-4d4f-8ffd-4e2f411ec516</b:Key>
+                <b:Value>
+                    <a:Neighbors />
+                    <a:Value>
+                        <a:Action>ShutdownComputer</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action>ShutdownComputer</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>ShutdownComputer</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Restart</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>ShutdownComputer</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SkipIfUserLoggedIn</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>ShutdownComputer</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>CountdownTime</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Int32</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:long">0</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>ShutdownComputer</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>UserMessage</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:string" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IsSuccessful</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>SystemInformation</a:Plugin>
+                        <a:ShowResults>true</a:ShowResults>
+                        <a:UniqueID>8fa58070-8475-4d4f-8ffd-4e2f411ec516</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>494a263f-08fa-4eff-8820-d8f77a6448ac</b:Key>
+                <b:Value>
+                    <a:Neighbors>
+                        <b:KeyValueOfstringEdgeAue4CSkn>
+                            <b:Key>798cba29-f3ad-46a5-8671-b73f1b1ec0ae</b:Key>
+                            <b:Value>
+                                <a:Condition i:type="a:EqualTo">
+                                    <a:Name>Equal To</a:Name>
+                                    <a:Variable>
+                                        <a:Data xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                            i:type="c:boolean">true</a:Data>
+                                        <a:Name>IsSuccessful</a:Name>
+                                    </a:Variable>
+                                </a:Condition>
+                                <a:InputParameters>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>ComputerName</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name>Parameter Mapping</a:Name>
+                                            <a:OutputParameterName>ComputerName</a:OutputParameterName>
+                                            <a:SourceNode>bbc2db70-9a5b-4455-91b4-98c369f8a90e</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>LoadComputerSystemInformation</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>LoadConfigMgrClientCacheInformation</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>LoadConfigMgrClientCacheUsageInformation</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>LoadConfigMgrClientInformation</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>LoadInventoryInformation</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>LoadNetworkInformation</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>LoadOperatingSystemInformation</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>SystemInformationCollection</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>LoadPendingRestartInformation</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">true</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                </a:InputParameters>
+                                <a:ParameterMappings i:nil="true" />
+                                <a:TriggerOnUserInterface>false</a:TriggerOnUserInterface>
+                            </b:Value>
+                        </b:KeyValueOfstringEdgeAue4CSkn>
+                    </a:Neighbors>
+                    <a:Value>
+                        <a:Action>PingComputer</a:Action>
+                        <a:DisplayName i:nil="true" />
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action>PingComputer</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin>Network</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ReplyFromHostName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ReplyFrom</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Status</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Net.NetworkInformation.IPStatus</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Bytes</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Nullable`1[System.Int32]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Time</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Int64</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>TTL</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Nullable`1[System.Int32]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IsSuccessful</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>Network</a:Plugin>
+                        <a:ShowResults>true</a:ShowResults>
+                        <a:UniqueID>494a263f-08fa-4eff-8820-d8f77a6448ac</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+            <b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+                <b:Key>798cba29-f3ad-46a5-8671-b73f1b1ec0ae</b:Key>
+                <b:Value>
+                    <a:Neighbors>
+                        <b:KeyValueOfstringEdgeAue4CSkn>
+                            <b:Key>8fa58070-8475-4d4f-8ffd-4e2f411ec516</b:Key>
+                            <b:Value>
+                                <a:Condition i:type="a:EqualTo">
+                                    <a:Name>Equal To</a:Name>
+                                    <a:Variable>
+                                        <a:Data xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                            i:type="c:string">True</a:Data>
+                                        <a:Name>PendingRestart</a:Name>
+                                    </a:Variable>
+                                </a:Condition>
+                                <a:InputParameters>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>ShutdownComputer</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>ComputerName</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider
+                                            i:type="a:OutputParameterMappingValueProvider">
+                                            <a:Name>Parameter Mapping</a:Name>
+                                            <a:OutputParameterName>ComputerName</a:OutputParameterName>
+                                            <a:SourceNode>bbc2db70-9a5b-4455-91b4-98c369f8a90e</a:SourceNode>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>ShutdownComputer</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>Restart</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">true</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>ShutdownComputer</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>SkipIfUserLoggedIn</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Boolean</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:boolean">false</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>ShutdownComputer</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>CountdownTime</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.Int32</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:int">300</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                    <a:InputParameterBuilder>
+                                        <a:Action>ShutdownComputer</a:Action>
+                                        <a:AllowedValueProviders i:nil="true" />
+                                        <a:Custom>false</a:Custom>
+                                        <a:Mask>false</a:Mask>
+                                        <a:Name>UserMessage</a:Name>
+                                        <a:Plugin>SystemInformation</a:Plugin>
+                                        <a:SanitizedType
+                                            xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                            <c:Data>System.String</c:Data>
+                                        </a:SanitizedType>
+                                        <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                            <a:Name i:nil="true" />
+                                            <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                                i:type="c:string">Your computer needs to restart,
+                                                please save and close in the next 5 minutes.</a:Value>
+                                        </a:ValueProvider>
+                                    </a:InputParameterBuilder>
+                                </a:InputParameters>
+                                <a:ParameterMappings i:nil="true" />
+                                <a:TriggerOnUserInterface>false</a:TriggerOnUserInterface>
+                            </b:Value>
+                        </b:KeyValueOfstringEdgeAue4CSkn>
+                    </a:Neighbors>
+                    <a:Value>
+                        <a:Action>SystemInformationCollection</a:Action>
+                        <a:DisplayName>Pending Restart?</a:DisplayName>
+                        <a:InputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LoadComputerSystemInformation</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LoadConfigMgrClientCacheInformation</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LoadConfigMgrClientCacheUsageInformation</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LoadConfigMgrClientInformation</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LoadInventoryInformation</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LoadNetworkInformation</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LoadOperatingSystemInformation</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action>SystemInformationCollection</a:Action>
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LoadPendingRestartInformation</a:Name>
+                                <a:Plugin>SystemInformation</a:Plugin>
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value xmlns:c="http://www.w3.org/2001/XMLSchema"
+                                        i:type="c:boolean">false</a:Value>
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:InputParameters>
+                        <a:OutputParameters>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ComputerName</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>OnOff</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ConsoleUser</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LastRestartTime</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Nullable`1[System.DateTime]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>PendingRestart</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Model</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>OperatingSystem</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>CacheAvailablePercent</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>CacheAvailableSize</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>CachePath</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>CacheSize</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>CacheUsedPercent</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>CacheUsedSize</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>ClientVersion</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>Domain</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IpAddress</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LastHardwareInventoryCycle</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Nullable`1[System.DateTime]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LastHardwareInventoryReport</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Nullable`1[System.DateTime]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LastSoftwareInventoryScanCycle</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Nullable`1[System.DateTime]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>LastSoftwareInventoryReport</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Nullable`1[System.DateTime]</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>MacAddress</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>SiteCode</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.String</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                            <a:InputParameterBuilder>
+                                <a:Action i:nil="true" />
+                                <a:AllowedValueProviders i:nil="true" />
+                                <a:Custom>false</a:Custom>
+                                <a:Mask>false</a:Mask>
+                                <a:Name>IsSuccessful</a:Name>
+                                <a:Plugin i:nil="true" />
+                                <a:SanitizedType
+                                    xmlns:c="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                                    <c:Data>System.Boolean</c:Data>
+                                </a:SanitizedType>
+                                <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                                    <a:Name i:nil="true" />
+                                    <a:Value i:nil="true" />
+                                </a:ValueProvider>
+                            </a:InputParameterBuilder>
+                        </a:OutputParameters>
+                        <a:Plugin>SystemInformation</a:Plugin>
+                        <a:ShowResults>true</a:ShowResults>
+                        <a:UniqueID>798cba29-f3ad-46a5-8671-b73f1b1ec0ae</a:UniqueID>
+                    </a:Value>
+                </b:Value>
+            </b:KeyValueOfstringNodeOfGraphAction8IhQhejPAue4CSkn>
+        </a:Nodes>
+        <a:Start>
+            <a:Action>StartNode</a:Action>
+            <a:DisplayName i:nil="true" />
+            <a:InputParameters>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                        i:nil="true" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SiteCode</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                        i:nil="true" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SmsProvider</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                        i:nil="true" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ComputerName</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+            </a:InputParameters>
+            <a:OutputParameters>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                        i:nil="true" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SiteCode</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                        i:nil="true" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>SmsProvider</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+                <a:InputParameterBuilder>
+                    <a:Action i:nil="true" />
+                    <a:AllowedValueProviders
+                        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                        i:nil="true" />
+                    <a:Custom>false</a:Custom>
+                    <a:Mask>false</a:Mask>
+                    <a:Name>ComputerName</a:Name>
+                    <a:Plugin i:nil="true" />
+                    <a:SanitizedType
+                        xmlns:b="http://schemas.datacontract.org/2004/07/Recast.Core.Plugins.Base.Abstractions">
+                        <b:Data>System.String</b:Data>
+                    </a:SanitizedType>
+                    <a:ValueProvider i:type="a:ConstantParameterValueProvider">
+                        <a:Name i:nil="true" />
+                        <a:Value i:nil="true" />
+                    </a:ValueProvider>
+                </a:InputParameterBuilder>
+            </a:OutputParameters>
+            <a:Plugin>BuilderAction</a:Plugin>
+            <a:ShowResults>false</a:ShowResults>
+            <a:UniqueID>bbc2db70-9a5b-4455-91b4-98c369f8a90e</a:UniqueID>
+        </a:Start>
+    </Graph>
+    <InputParameters xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+        i:nil="true" />
+    <Name>Reboot If Pending Restart</Name>
+    <ResultInputParameterName>ComputerName</ResultInputParameterName>
+    <Type>Device</Type>
+    <UniqueID>c91b90db-6e27-42b1-91e0-0a9f1ad38cfb</UniqueID>
+</BuilderAction>
