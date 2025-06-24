@@ -1,0 +1,1 @@
+This action is a device action that lets you pick from a specific list of collections which collection to add a device to, it waits 10 seconds, and then it runs a machine policy retrieval and evaluation. 
