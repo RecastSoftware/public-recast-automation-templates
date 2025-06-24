@@ -1,0 +1,17 @@
+This Builder action runs through all the Configuration Manager's client policies. This is great for new or recently re-built computers to force them to check into Configuration Manager.
+
+This tool completes the following steps:
+
+Ping computer
+Machine Policy Retrieval and Evaluation Cycle
+Discovery Data Collection Cycle
+Hardware Inventory Cycle
+Software Inventory Cycle
+Send Unsent State Messages Cycle
+Software Updates Scan Cycle
+Application Deployment Evaluation Cycle
+State Message Cache Cleanup
+Windows Installer Source List Update Cycle
+Software Inventory Cycle
+File Collection Cycle
+Software Updates Deployment Evaluation Cycle
