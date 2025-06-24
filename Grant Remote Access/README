@@ -1,0 +1,8 @@
+This Builder action is used to grant a specific AD user remote access to a device by adding the user to the local "Remote Desktop Users" group on the device. 
+
+The tool completes the following steps:
+
+Asks for the AD Username
+Adds the AD Username entered to the "Remote Desktop Users" local group. 
+
+Video Walkthrough: https://www.youtube.com/watch?v=k4utNvFABrQ
