@@ -1,0 +1,9 @@
+This Builder action lets you compare the group memberships of two AD users. This action is particularly useful if, for example, you have a new team member and want to compare their group memberships to those of an existing team member.
+
+This tool completes the following steps:
+
+Gets AD group membership for a selected user
+Prompts you to enter the AD username that you'd like to compare against the selected user
+Shows you group memberships for both users in tabbed results 
+
+Video Walkthrough: https://www.youtube.com/watch?v=qqxG7IIFjtk&embeds_referring_euri=https%3A%2F%2Fdocs.recastsoftware.com%2F&source_ve_path=MjM4NTE
