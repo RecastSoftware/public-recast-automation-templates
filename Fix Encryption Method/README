@@ -1,0 +1,13 @@
+This Builder action automates the process of adding TPM and Numerical Key Protectors to BitLocker. It includes all the necessary precursor steps and enough intelligence to complete this task without admin intervention.
+
+This tool completes the following steps:
+
+Stop MBAM Service
+Decrypt C: Drive
+A PowerShell Script with Progress Stream on to monitor the progress of the decryption, and proceed when successfully completed.
+A Registry change to override the encryption method
+Add the TPM Key Protector
+Add the Numerical Password Key Protector
+Encrypt C:
+
+Video Walkthrough: https://www.youtube.com/watch?v=zIIVdQlYuZ4

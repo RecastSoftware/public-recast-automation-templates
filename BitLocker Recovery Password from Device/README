@@ -1,0 +1,5 @@
+This Builder action grabs the BitLocker Recovery Password from any drive on a device. This uses a custom input parameter to allow users to choose what drive they want to grab the recovery password from.
+
+This tool completes the following step:
+
+Get Recovery Password From Device

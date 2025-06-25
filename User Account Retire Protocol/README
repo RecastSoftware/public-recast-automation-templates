@@ -1,0 +1,11 @@
+This Builder action automates a common task — taking steps when a person leaves an organization to secure their account credentials and prepare the account for retirement. It's easily adaptable to other user-based tasks as well, and is a nice jumping-off point for Recast Builder.
+
+This tool completes the following steps:
+
+Prompts the admin running the tool to input a new password for the account
+Resets the password for the account to this password
+Disables the account
+Moves the account to a new OU
+In the Target Input Parameters panel, you must specify a valid OU in your environment as a Constant value. 
+
+Format Example: OU=RecastUsers,DC=demo,DC=recastsoftware,DC=com

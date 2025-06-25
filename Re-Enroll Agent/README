@@ -1,0 +1,12 @@
+There are times when a Recast Agent attempts to connect to a Recast Management Server, but is unable. You'll see a warning in the Recast Management Server telling you that there is an Agent that is trying to connect, but it is not approved. This occurs most often if you delete the Agent from the Recast Management Server manually. Because the Agent information is deleted, there is no way to approve this Agent. 
+
+To resolve the problem, use this Builder action to re-enroll the Recast Agent.
+
+The tool completes the following steps:
+
+Deletes the agent.sqlite file located in this folder:
+Version 5.x Recast Agent: C:\ProgramData\Recast Software\Recast Agent
+
+Version 4.x Recast Agent: C:\Windows\System32\config\systemprofile\AppData\Roaming\Recast Software\Recast Agent
+
+Restarts the Recast Agent service
