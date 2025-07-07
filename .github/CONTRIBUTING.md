@@ -63,7 +63,7 @@ Thank you for your interest in contributing! Whether it’s a full-blown workflo
 
 For assistance:
 
-* Open an issue for questions or to raise issues with published conetent.
+* Open an issue for questions or to raise issues with published content.
 * Tag your issue with `help wanted` to get our attention.
 * Discuss and share ideas for automations over on [Recast’s Discourse forum](https://discourse.recastsoftware.com) or in the #Recast-Software channel on WinAdmins Discord (https://discord.com/channels/618712310185197588/1225493794997272687).
 
