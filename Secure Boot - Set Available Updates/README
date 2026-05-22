@@ -1,0 +1,10 @@
+This builder action lets you set the "AvailableUpdates" registry key to several pre-defined values. This registry key instructs the built in windows secure boot update engine to perform various tasks.
+Once the value is set, the Secure-Boot-Update scheduled task needs to run to apply the updates, then the machine will need to reboot (potentially several times) to apply.
+Value descriptions:
+- Update Certs Only - Applies updated Secure Boot Certificates. Non breaking change, simply adds the new certificates to the database. 
+- Update Boot Manager Only - Applies the updated Boot Manager
+- Update Certificates and Boot Manager - Applies both the boot manager and secure boot certificate updates at once. Will likely require multiple reboots.
+
+2 more values below could be added to the list if you want them, but not including them in the export as there is no way to back out from these changes.
+- *Danger* Update Secure Boot Cert Revocation -  Updates the certificate revocation list. This will cause boot media to fail that uses certificates that have been revocated "Windows Production CA 2011" - Set to 128 (0x80)
+- *Danger* Update Boot Manager SVN -  Updates the Secure Version Number (SVN) will prevent older insecure boot loader versions from loading. This can lock out boot media from working that is not updated. - Set to 512 (0x200)
